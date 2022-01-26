@@ -15,10 +15,7 @@ class Solution {
             for(int j=1; j<N; j++)
             {
               
-                {
-                    if(A[j]-A[k]>=0)
-                    temp=max(temp, A[j]-A[k]+dp[i-1][k]);
-                } 
+                
                 
                 temp=max(temp, dp[i-1][j-1]-A[j-1]);
                 dp[i][j]=max(dp[i][j-1], temp+A[j]);
